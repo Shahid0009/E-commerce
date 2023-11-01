@@ -4,7 +4,7 @@ import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import Product from "./pages/Product";
 import ShopCategory from "./pages/ShopCategory";
-// import Login from "./pages/Login"
+import Login from "./components/Login/Login"
 // import  Register from "./pages/Register"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
@@ -19,8 +19,7 @@ function App(props) {
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
-          {/* <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} /> */}
+          <Route path="/login" element={<Login />} />
           <Route path="/mens" element={<ShopCategory banner= {mens} category="mens" />} />
           <Route path="/womens" element={<ShopCategory banner= {womens} category="womens" />} />
           <Route path="/kids" element={<ShopCategory banner= {kids} category="kids" />} />

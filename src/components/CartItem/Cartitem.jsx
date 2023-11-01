@@ -7,7 +7,7 @@ const Cartitem = () => {
     useContext(ShopContext);
   return (
     <>
-      <div className="cartitems mx-28 px-20 my-20">
+      <div className="cartitems mx-5 lg:mx-28 lg:px-20 my-20">
         <div className="cartitems-format-main mb-5 grid grid-cols-6 font-semibold">
           <p className="">Product</p>
           <p className="">Title</p>

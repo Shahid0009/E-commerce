@@ -4,8 +4,8 @@ import hand_icon from "../Assets/hand_icon.png";
 import hero_image from "../Assets/hero_image.png";
 const hero = () => {
   return (
-    <div className="hero flex h-[100vh] py-5 px-28 bg-gradient-to-t  from-fuchsia-200 to-rose-300">
-      <div className="hero-left w-[60%] font-semibold  mt-40 font-sans text-8xl flex-row">
+    <div className="hero flex w-max lg:h-[100vh] flex-wrap lg:flex-nowrap  px-28 bg-gradient-to-t gap-36 from-fuchsia-200 to-rose-300">
+      <div className="hero-left w-full  lg:w-[60%] font-semibold  mt-40 font-sans lg:text-9xl text-9xl flex-row">
         <h2 className="text-xl font-semibold">NEW ARRIVALS ONLY</h2>
         <div>
           <div className="handicon flex">

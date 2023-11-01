@@ -5,8 +5,8 @@ const NewCollections = () => {
   return (
     <div className="newcollection mb-32">
       <h1 className="flex justify-center text-7xl font-bold pb-20">New Collections</h1>
-      <div className="collections flex justify-center">
-        <div className="grid grid-cols-4 gap-5">
+      <div className="collections ">
+        <div className="mx-4 lg:mx-28 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-10 md:mx-10  gap-5">
           {new_collections.map((item, i) => {
             return (
               <Item

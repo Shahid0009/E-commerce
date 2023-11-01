@@ -7,9 +7,12 @@ import { ShopContext } from "./../../Context/ShopContext";
 const Navbar = () => {
   const { getTotalCartItem } = useContext(ShopContext);
   return (
-    <div className="navbar flex items-center justify-between bg-white py-5 px-28">
+    <div className="navbar flex items-center justify-between bg-white text-xl font-semibold py-5 px-28">
       <div className="nav-logo">
-        <h1 className="logo">weShop</h1>
+        <h1 className="logo">
+          {" "}
+          <Link to="/">weShop</Link>
+        </h1>
       </div>
       <div className="nav-menu">
         <ul className=" flex items-center gap-12">
@@ -32,7 +35,7 @@ const Navbar = () => {
           <li>
             <Link
               className="py-4 mr-3 px-8 border-cyan-600 rounded-[30px] bg-slate-400 "
-              path="/login"
+              to="/login"
             >
               Login
             </Link>
